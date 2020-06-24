@@ -2,6 +2,16 @@
 Texto is a GUI text-editor made in Tkinter (python).
 
 ## Features:
+
+1. **Basic Features**
+    * New
+    * Save
+    * Save As
+    * Open
+    * Cut
+    * Copy
+    * Paste
+    * Select All
 1. **Font change options**
     * Bold, Italics, Underline
     * Size

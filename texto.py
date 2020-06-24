@@ -70,12 +70,12 @@ theme_choice = tk.StringVar()
 color_icons = (light_default_icon,light_plus_icon,dark_icon,red_icon,monokai_icon,night_blue_icon)
 
 color_dict ={
-    "Light Default Icon":('#000000','#ffffff','xpnative'),
-    "Light Plus Icon":('#474747','#e0e0e0','clam'),
-    "Dark Icon":('#c4c4c4','#2d2d2d','black'),
-    "Red Icon":('#2d2d2d','#ffe8e8','radiance'),
-    "Monokai Icon":('#d3b774','#474747','ubuntu'),
-    "Night Blue Icon":('#ededed','#6b9dc2','itft1')
+    "Light Theme":('#000000','#ffffff','xpnative'),
+    "Light Plus Theme":('#474747','#e0e0e0','clam'),
+    "Dark Theme":('#c4c4c4','#2d2d2d','black'),
+    "Red Theme":('#2d2d2d','#ffe8e8','radiance'),
+    "Monokai Theme":('#d3b774','#474747','ubuntu'),
+    "Night Blue Theme":('#ededed','#6b9dc2','itft1')
 }
 
 #cascading the menu
