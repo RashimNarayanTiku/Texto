@@ -49,5 +49,10 @@ Texto is a GUI text-editor made in Tkinter (python).
 
 &ensp;
 
+# Downloading
+Download and unzip [texto.zip](texto.zip) and run *texto.exe*
+
+&ensp;
+
 # Credits
 Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
