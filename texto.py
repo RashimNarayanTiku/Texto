@@ -24,11 +24,6 @@ main_application.wm_iconbitmap('icon.ico')
 
 main_menu = tk.Menu()
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# CREDIT THE AUTHOR
-# <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 #MENU options
 File = tk.Menu(main_menu,tearoff=False)
@@ -240,9 +235,6 @@ submit_btn.grid_remove()
 
 
 
-
-
-
 #################################### TEXT-EDITOR ##########################################
 
 text_editor = tk.Text(main_application)
@@ -250,9 +242,6 @@ text_editor.config(wrap='word',relief=tk.FLAT, undo=True)
 text_editor.focus_set()
 
 yscroll_bar = tk.Scrollbar(main_application)
-# yscroll_bar.pack(side=tk.RIGHT,fill=tk.Y)
-
-# text_editor.pack(fill=tk.BOTH,expand=True)
 yscroll_bar.config(command=text_editor.yview)
 text_editor.config(yscrollcommand=yscroll_bar.set)
 
