@@ -19,11 +19,25 @@ Texto is a GUI text-editor made in Tkinter (python).
     * Contains multiple themes such as Dark, Red, Monokai, Night Blue etc.
 
 1. **Find and Replace**
-    * Finds the matching word/sentence and highlights it (with yellow background). The same can also be replaced with another word/sentence.
+    * Finds the matching word/sentence and highlights it (with yellow background). 
+    * The words can also be replaced with another word/sentence.
 
 1. **Spell-checker**
-    * (When ON) Checks the spelling of each word and highlights(in red) any unknown word.
+    * (*When ON*) Checks the spelling of each word and highlights(in red) any unknown word.
 
 1. **Text to Speech**
-    * (When ON) Speaks the selected text.
+    * (*When ON*) Speaks the selected text.
     
+&ensp;
+# Images
+![Screen](screen.png)
+
+&ensp;
+
+### #DarkMode
+![Dark Screen](darkScreen.png)
+
+&ensp;
+
+# Credits
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
