@@ -468,9 +468,9 @@ replace_entry.bind('<Return>',find_and_replace)
 def spell_check(event=None):
     '''spell_check the word preceeding the insertion point'''
     
-    index = text_editor.search(r'\s', "insert", backwards=True, regexp=True)
+    index = text_editor.search(r'\s', "insert",stopindex="1.0", backwards=True, regexp=True)
 
-    if index == "":
+    if not index:
         index ="1.0"
     else:
         index = text_editor.index(f"{index}+1c")
