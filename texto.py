@@ -470,7 +470,7 @@ def spell_check(event=None):
     
     index = text_editor.search(r'\s', "insert", stopindex="1.0", backwards=True, regexp=True)
 
-    if index == "":
+    if not index:
         index ="1.0"
     else:
         index = text_editor.index(f"{index}+1c")
