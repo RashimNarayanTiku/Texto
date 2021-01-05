@@ -1,8 +1,21 @@
 # Texto
 Texto is a GUI text-editor made in Tkinter (python).
 
+
+&ensp;
+
+# Downloading
+Download and unzip [texto.zip](texto.zip) and run *texto.exe*
+
+&ensp;
+
 ## Features:
 
+0. *Upcoming Features*
+   * *Image insertion in the editor*
+   * *Hovering labels on buttons*
+   * *Some minor UI changes*
+   
 1. **Basic Features**
     * New
     * Save
@@ -46,11 +59,6 @@ Texto is a GUI text-editor made in Tkinter (python).
 
 ### #DarkMode
 ![Dark Screen](darkScreen.png)
-
-&ensp;
-
-# Downloading
-Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 &ensp;
 
