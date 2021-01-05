@@ -1,6 +1,12 @@
 # Texto
-Texto is a GUI text-editor made in Tkinter (python).
+Texto is a GUI text-editor made in Tkinter (python). It is basically an advance version of *Notepad* application. <br> 
 
+Additional features include:
+* Spell checker
+* Text to Speech 
+* Find and replace
+* Theme changer
+* Word and character counter
 
 &ensp;
 
