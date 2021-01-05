@@ -49,7 +49,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * (*When ON*) Checks the spelling of each word and highlights(in red) any unknown word.
 
 1. **Text to Speech**
-    * (*When ON*) Speaks the selected text.
+    * (*When ON*) Speaks the selected text (when pressed the button or Ctrl+T).
     
 &ensp;
 # Images
