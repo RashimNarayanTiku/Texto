@@ -18,8 +18,8 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 ## Features:
 
 0. *Upcoming Features Roadmap*
-   * *Line numbers*
-   * *Hovering labels on buttons*
+   * *Coding Mode - Line Number SideBar, Tab spacing options*
+   * *ToolTips*
    * *UI changes*
    
 1. **Basic Features**
