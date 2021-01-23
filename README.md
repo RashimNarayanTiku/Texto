@@ -17,10 +17,12 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 ## Features:
 
-0. *Upcoming Features Roadmap*
-   * *Coding Mode - Line Number SideBar, Tab spacing options*
+0. __*Upcoming Features Roadmap*__
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
+   * *FullScreen Mode(F11 and Esc)
+   * *Line Number SideBar* 
+   * *Tab spacing options*
    * *UI changes*
    
 1. **Basic Features**
