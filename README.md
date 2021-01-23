@@ -17,7 +17,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 ## Features:
 
-0. __*Upcoming Features Roadmap*__
+0. _*Upcoming Features Roadmap*_
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
    * *FullScreen Mode(F11 and Esc)
