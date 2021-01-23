@@ -20,7 +20,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 0. _*Upcoming Features Roadmap*_
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
-   * *FullScreen Mode(F11 and Esc)
+   * *FullScreen Mode(F11 and Esc)*
    * *Line Number SideBar* 
    * *Tab spacing options*
    * *UI changes*
