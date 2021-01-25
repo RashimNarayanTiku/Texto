@@ -18,21 +18,20 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 ## Features:
 
 0. _*Upcoming Features Roadmap*_
+   * *UI changes*
+   * *Spelling checker with correction option*
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
    * *FullScreen Mode(F11 and Esc)*
    * *Line Number SideBar* 
    * *Tab spacing options*
-   * *UI changes*
+   
    
 1. **Basic Features**
     * New
-    * Save
-    * Save As
-    * Open
-    * Cut
-    * Copy
-    * Paste
+    * Save/Save As
+    * Open/Close
+    * Cut/Copy/ Paste
     * Select All
 1. **Font change options**
     * Bold, Italics, Underline
