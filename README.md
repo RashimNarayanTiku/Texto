@@ -29,9 +29,9 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
    
 1. **Basic Features**
     * New
-    * Save/Save As
-    * Open/Close
-    * Cut/Copy/ Paste
+    * Save, Save As
+    * Open, Close
+    * Cut, Copy, Paste
     * Select All
 1. **Font change options**
     * Bold, Italics, Underline
