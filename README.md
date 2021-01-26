@@ -37,9 +37,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     * Select All
 1. **Font change options**
     * Bold, Italics, Underline
-    * Font Size
-    * Font Family
-    * Font Color
+    * Font Size, Family, Color
     
 1. **Alignment change options**
     * Left Align
@@ -55,7 +53,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     * (*When ON*) Speaks the selected text (when pressed the button or Ctrl+T).
     
 1. **Application theme changer**
-    * Contains multiple themes such as Dark, Red, Monokai, Night Blue etc.
+    * Contains multiple themes such as White, Monokai, Dark, Red, Blue etc.
 
 1. **Number-Line Sidebar**
     * It shows the line number along with text area and updates accordingly.
