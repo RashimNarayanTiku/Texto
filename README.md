@@ -14,7 +14,7 @@ Additional features include:
 &ensp;
 
 # Downloading
-Download and unzip [texto.zip](texto.zip) and run *texto.exe*
+Download and install [Texto-1.1-amd64.msi](Texto-1.1-amd64.msi) and run *texto.exe*
 
 &ensp;
 
