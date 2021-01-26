@@ -2,11 +2,14 @@
 Texto is a GUI text-editor made in Tkinter (python). It is basically an advance version of *Notepad* application. <br> 
 
 Additional features include:
-* Spell checker
+* Spelling Checker and Corrector
 * Text to Speech 
 * Find and replace
+* Number Line Sidebar
 * Theme changer
-* Word and character counter
+* Line and Column number
+* Word counter
+* FullScreen Mode
 
 &ensp;
 
@@ -17,14 +20,13 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 ## Features:
 
-0. _*Upcoming Features Roadmap*_
+0. **Recently added Features**
    * *UI changes*
    * *Improved spelling checker with word correction option*
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
    * *FullScreen Mode(F11 and Esc)*
-   * *Line Number SideBar* 
-   * *Tab spacing options*
+   * *Line Number SideBar (With dynamic size adjuster)* 
    
    
 1. **Basic Features**
@@ -35,7 +37,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * Select All
 1. **Font change options**
     * Bold, Italics, Underline
-    * Size
+    * Font Size
     * Font Family
     * Font Color
     
@@ -43,7 +45,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * Left Align
     * Right Align
     * Center Align
-1. **Word and character counter**
+1. **Word counter**
     * Counts the number of words and character written
     
 1. **Application theme changer**
@@ -53,8 +55,9 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * Finds the matching word/sentence and highlights it (with yellow background). 
     * The words can also be replaced with another word/sentence.
 
-1. **Spell-checker**
+1. **Spell-checker and Corrector**
     * (*When ON*) Checks the spelling of each word and highlights(in red) any unknown word.
+    * Also suggests list of words to choose and fix the word.
 
 1. **Text to Speech**
     * (*When ON*) Speaks the selected text (when pressed the button or Ctrl+T).
@@ -66,7 +69,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 &ensp;
 
 ### #DarkMode
-![Dark Screen](darkScreen.png)
+![Dark Screen](monokai.png)
 
 &ensp;
 
