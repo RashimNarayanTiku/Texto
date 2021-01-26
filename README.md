@@ -21,12 +21,12 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
 ## Features:
 
 0. **Recently added Features**
-   * *UI changes*
    * *Improved spelling checker with word correction option*
+   * *Line Number SideBar (With dynamic size adjuster)*
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
-   * *FullScreen Mode(F11 and Esc)*
-   * *Line Number SideBar (With dynamic size adjuster)* 
+   * *FullScreen Mode(F11 and Esc)* 
+   * *UI changes*
    
    
 1. **Basic Features**
