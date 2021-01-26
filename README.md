@@ -14,19 +14,19 @@ Additional features include:
 &ensp;
 
 # Downloading
-Download and unzip [texto.zip](texto.zip) and run *texto.exe*
+Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/Texto/raw/master/Texto-1.1-amd64.msi) and run *texto.exe*
 
 &ensp;
 
 ## Features:
 
 0. **Recently added Features**
-   * *UI changes*
    * *Improved spelling checker with word correction option*
+   * *Line Number SideBar (With dynamic size adjuster)*
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
-   * *FullScreen Mode(F11 and Esc)*
-   * *Line Number SideBar (With dynamic size adjuster)* 
+   * *FullScreen Mode(F11 and Esc)* 
+   * *UI changes*
    
    
 1. **Basic Features**
@@ -37,9 +37,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * Select All
 1. **Font change options**
     * Bold, Italics, Underline
-    * Font Size
-    * Font Family
-    * Font Color
+    * Font Size, Family, Color
     
 1. **Alignment change options**
     * Left Align
@@ -55,7 +53,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * (*When ON*) Speaks the selected text (when pressed the button or Ctrl+T).
     
 1. **Application theme changer**
-    * Contains multiple themes such as Dark, Red, Monokai, Night Blue etc.
+    * Contains multiple themes such as White, Monokai, Dark, Red, Blue etc.
 
 1. **Number-Line Sidebar**
     * It shows the line number along with text area and updates accordingly.
@@ -74,7 +72,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     
 &ensp;
 # Images
-![Screen](screen.png)
+![Screen](white.png)
 
 &ensp;
 
