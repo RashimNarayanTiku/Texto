@@ -74,7 +74,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     
 &ensp;
 # Images
-![Screen](screen.png)
+![Screen](white.png)
 
 &ensp;
 
