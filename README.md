@@ -19,7 +19,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 0. _*Upcoming Features Roadmap*_
    * *UI changes*
-   * *Spelling checker with correction option*
+   * *Improved spelling checker with word correction option*
    * *ToolTips (i.e. Button Labels)*
    * *Contextual Menu (i.e. Right Click Menu)*
    * *FullScreen Mode(F11 and Esc)*
