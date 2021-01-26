@@ -2,17 +2,14 @@ import tkinter as tk
 from tkinter import ttk
 from ttkthemes import themed_tk
 from tkinter import font, colorchooser, filedialog, messagebox
-from copy import deepcopy
 import os, shutil
 from tkinter.font import Font
-import pyttsx3
 from time import sleep
 import time
 from idlelib import window
-import logging
-from multiprocessing.dummy import Process as Thread
 
-import enchant
+import pyttsx3
+import enchant  
 from SpellCheckMenu import SpellCheckMenu
 from ToolTip import createToolTip
 from Editor import Editor
@@ -806,67 +803,12 @@ Tools.add_checkbutton(label='Spell Checker',image=spell_check_on_icon,compound=t
 
 
 ## Text to Speech
-logger = logging.getLogger(__name__)
-
-## MADE A DIFFERENT CLASS TO STOP TTS MIDSENTENCE
-class VoiceBox(object):
-    def __init__(self):
-        self.t = None
-        self._running = False
-        self.engine = None
-
-    def _processSpeech(self, text):
-        self.engine = pyttsx3.init()
-        self.engine.setProperty('rate',120)
-        self.engine.say(str(text))
-        self.engine.startLoop(False)
-        while self._running:
-            self.engine.iterate()
-        logger.debug('Thread loop stopped')
-
-    def say(self, text, noInter=2):
-        # check if thread is running
-        if self.t and self._running:
-            logger.debug('Interupting...')
-            # stop it if it is
-            self.stop()
-        # iterate speech in a thread
-        logger.debug('Talking: %s', text)
-        self.t = Thread(target=self._processSpeech, args=(text,))
-        
-
-        self._running = True
-        self.t.daemon = True
-        self.t.start()
-        # give the thread some space
-        # without this sleep and repeatitive calls to 'say'
-        # the engine may not close properly and errors will start showing up
-        sleep(noInter)
-
-    def isbusy(self):
-        if self.engine == None:
-            return False
-        else:
-           return(self.engine.isBusy)
-
-    def stop(self):
-        self._running = False
-        try:
-            self.engine.endLoop()
-            logger.debug('Voice loop stopped')
-        except:
-            pass
-        try:
-            self.t.join()
-            logger.debug('Joined Voice thread')
-        except Exception as e:
-            logger.exception(e)
-
 
 def tts(event=None):
     ranges = text_area.tag_ranges(tk.SEL)
     if(ranges):
         tts_engine.say(text_area.get(*ranges))
+        tts_engine.runAndWait()
 
 tts_state = tk.BooleanVar()
 tts_state.set(True)
@@ -884,7 +826,9 @@ def change_tts(event=None):
         tts_btn.bind('<Button-1>',tts)  
         text_area.bind_all("<Control-t>",tts)
 
-tts_engine = VoiceBox()
+tts_engine = pyttsx3.init()
+tts_engine.setProperty('rate',120)
+
 tts_btn.bind('<Button-1>',tts)
 Tools.add_checkbutton(label="Text to Speech",image=tts_on_icon,compound=tk.LEFT,variable=tts_state,command=change_tts)
 
