@@ -5,7 +5,7 @@ Additional features include:
 * Spelling Checker and Corrector
 * Text to Speech 
 * Find and replace
-* Number Line Sidebar
+* Number-Line Sidebar
 * Theme changer
 * Line and Column number
 * Word counter
@@ -45,15 +45,7 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
     * Left Align
     * Right Align
     * Center Align
-1. **Word counter**
-    * Counts the number of words and character written
     
-1. **Application theme changer**
-    * Contains multiple themes such as Dark, Red, Monokai, Night Blue etc.
-
-1. **Find and Replace**
-    * Finds the matching word/sentence and highlights it (with yellow background). 
-    * The words can also be replaced with another word/sentence.
 
 1. **Spell-checker and Corrector**
     * (*When ON*) Checks the spelling of each word and highlights(in red) any unknown word.
@@ -61,6 +53,24 @@ Download and unzip [texto.zip](texto.zip) and run *texto.exe*
 
 1. **Text to Speech**
     * (*When ON*) Speaks the selected text (when pressed the button or Ctrl+T).
+    
+1. **Application theme changer**
+    * Contains multiple themes such as Dark, Red, Monokai, Night Blue etc.
+
+1. **Number-Line Sidebar**
+    * It shows the line number along with text area and updates accordingly.
+    * Updates dynamically based on the space required.
+    * It can be removed if not required in 'View' tab.
+    
+1. **Find and Replace**
+    * Finds the matching word/sentence and highlights it (with yellow background). 
+    * The words can also be replaced with another word/sentence.
+
+1. **Word counter**
+    * Counts the number of words and character written.
+    
+1. **Line and Column Number**
+    * Follows the mouse pointer and keeps the track of line and column number in the editor.
     
 &ensp;
 # Images
