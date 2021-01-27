@@ -35,7 +35,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     * Save, Save As
     * Open, Close
     * Cut, Copy, Paste
-    * Select All
+    * clear All
 1. **Font change options**
     * Bold, Italics, Underline
     * Font Size, Family, Color
