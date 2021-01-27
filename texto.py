@@ -127,7 +127,6 @@ def theme_change():
     fg_color,bg_color,ins_color = color_tuple[0],color_tuple[1],color_tuple[2]
     text_area.config(fg=fg_color,background = bg_color,insertbackground=ins_color)
     number_line.config(background=bg_color)
-    
     theme_btn.config(image=color_icons[theme])
     main_application.set_theme(color_tuple[3])
 
@@ -553,7 +552,31 @@ text_area.bind("<space>",spell_check)
 # ///////////////////////////////////////////////  STATUS BAR ///////////////////////////////////////////////
 
 statusbar = ttk.Label(main_application)
-statusbar.grid_columnconfigure(3, weight=1)
+statusbar.grid_columnconfigure(5, weight=1)
+
+
+
+##Tab Size
+tab_size_choice = tk.StringVar()
+tab_size_choice.set('4 spaces')
+
+def tab(*args):
+    global tab_size_choice
+    tabsize = int(tab_size_choice.get()[0])
+    text_area.insert(tk.INSERT, " " * tabsize)
+    return 'break'
+
+def change_tab_size(*args):
+    global tab_size_choice
+    tab_size_btn.config(text=f'Tab: {tab_size_choice.get()}')
+
+text_area.bind("<Tab>", tab)
+
+tab_size_btn = ttk.Label(statusbar, text=f"Tab: 4 spaces")
+tab_size_btn.config(font=("Calibri",8))
+tab_size_btn.grid(row=0,column=0,padx=2)
+
+separator = ttk.Separator(statusbar, orient=tk.VERTICAL).grid(row=0,column=1,padx=6,sticky="sn")
 
 
 def changed(event=None):
@@ -564,45 +587,43 @@ def changed(event=None):
     text_area.edit_modified(False)
 
     words_count = len(text_area.get(1.0,'end-1c').split())
-    countLabel.configure(text=f'{words_count} words')
+    count_label.configure(text=f'{words_count} words')
     if words_count > 1000:
-        countLabel.configure(width=35)
+        count_label.configure(width=35)
 
     index = text_area.index(tk.INSERT)
     dot_pos = index.find('.')
     line_no = index[:dot_pos]
     column_no = index[dot_pos+1:]
-    lineNumberLabel.configure(text=f"Ln: {line_no}  Col: {column_no}")
-    if int(line_no)>10000 or int(column_no)>10000: lineNumberLabel.configure(width=20)
-    elif int(line_no)>1000 or int(column_no)>1000: lineNumberLabel.configure(width=14)
-    else: lineNumberLabel.configure(width=10)
+    line_number_label.configure(text=f"Ln: {line_no}  Col: {column_no}")
+    if int(line_no)>10000 or int(column_no)>10000: line_number_label.configure(width=25)
+    elif int(line_no)>1000 or int(column_no)>1000: line_number_label.configure(width=18)
+    else: line_number_label.configure(width=15)
 
 text_area.bind('<<Modified>>',changed)
 
 
 ##Line and Column counter
-lineNumberLabel = ttk.Label(statusbar,width=10, text=f"Ln: {1}  Col: {0}")
-lineNumberLabel.config(font=("Calibri",8))
-lineNumberLabel.grid(row=0,column=0,padx=4)
+line_number_label = ttk.Label(statusbar,width=15, text=f"Ln: {1}  Col: {0}")
+line_number_label.config(font=("Calibri",8))
+line_number_label.grid(row=0,column=2)
 
-separator = ttk.Separator(statusbar, orient=tk.VERTICAL).grid(row=0,column=1,padx=6,sticky="sn")
+separator = ttk.Separator(statusbar, orient=tk.VERTICAL).grid(row=0,column=3,padx=6,sticky="sn")
 
 ##word and character counter
-countLabel = ttk.Label(statusbar, width=30, text=f"0 words")
-countLabel.config(font=("Calibri",8))
-countLabel.grid(row=0,column=2)
-
-
+count_label = ttk.Label(statusbar, width=30, text=f"0 words")
+count_label.config(font=("Calibri",8))
+count_label.grid(row=0,column=4)
 
 ## FullScreen 
 full_screen_state = False
 
-def toggle_full_screen(event):
+def toggle_full_screen(event=None):
     global full_screen_state
     full_screen_state = not full_screen_state
     main_application.attributes("-fullscreen", full_screen_state)
 
-def quit_full_screen(event):
+def quit_full_screen(event=None):
     global full_screen_state
     full_screen_state = False
     main_application.attributes("-fullscreen", full_screen_state)
@@ -614,7 +635,7 @@ main_application.bind("<Escape>", quit_full_screen)
 fullscreen_btn = ttk.Label(statusbar,image=fullscreen_icon,cursor='hand2')
 fullscreen_btn.bind('<ButtonRelease-1>',toggle_full_screen)
 
-fullscreen_btn.grid(row=0,column=30,sticky='e')
+fullscreen_btn.grid(row=0,column=5,sticky='e')
 createToolTip(fullscreen_btn,text="Full Screen")
 
 
@@ -642,7 +663,7 @@ def new_file(event=None):
         return
     url = 'Untitled.txt'
     text_area.delete(1.0,tk.END)
-File.add_command(label='New',compound=tk.LEFT,accelerator='CTRL+N', command=new_file)
+File.add_command(label='New',compound=tk.LEFT, command=new_file)
 
 
 ## open functionality
@@ -660,7 +681,7 @@ def open_file(event=None):
         return 
     is_saved = True
     saved_state()
-File.add_command(label='Open',compound=tk.LEFT,accelerator='CTRL+O',command=open_file)
+File.add_command(label='Open...',compound=tk.LEFT,accelerator='CTRL+O',command=open_file)
 
 
 ## Save functionality
@@ -776,10 +797,14 @@ def show_hide_linebar():
         text_editor.text.pack(side=tk.LEFT,fill=tk.BOTH, expand=True)
         text_editor.scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         line_bar_state=True
+
+View.add_command(label='Full Screen Mode', accelerator='F11',command=toggle_full_screen)
+View.add_separator()
 View.add_checkbutton(label='Tool Bar',compound=tk.LEFT,variable=toolbar_state, onvalue=True, offvalue=False, command=show_hide_toolbar)
 View.add_checkbutton(label='Status Bar',compound=tk.LEFT, variable=status_bar_state, onvalue=True, offvalue=False,command=show_hide_statusbar)
 View.add_checkbutton(label='Line Number Bar',compound=tk.LEFT, variable=line_bar_state, onvalue=True, offvalue=False,command=show_hide_linebar)
 
+# Tool Menu Functionality
 
 ##spell_check button
 spell_check_state = tk.BooleanVar()
@@ -795,11 +820,10 @@ def change_spell_check(event=None):
         spell_check_state = True
         spell_check_btn.configure(image=spell_check_on_icon)
         text_area.bind("<space>",spell_check)
-Tools.add_checkbutton(label='Spell Checker',image=spell_check_on_icon,compound=tk.LEFT,variable=spell_check_state,command=change_spell_check)
+Tools.add_checkbutton(label='Spell Checker',compound=tk.LEFT,variable=spell_check_state,command=change_spell_check)
 
 
 ## Text to Speech
-
 def tts(event=None):
     ranges = text_area.tag_ranges(tk.SEL)
     if(ranges):
@@ -826,7 +850,19 @@ tts_engine = pyttsx3.init()
 tts_engine.setProperty('rate',120)
 
 tts_btn.bind('<Button-1>',tts)
-Tools.add_checkbutton(label="Text to Speech",image=tts_on_icon,compound=tk.LEFT,variable=tts_state,command=change_tts)
+Tools.add_checkbutton(label="Text to Speech",compound=tk.LEFT,variable=tts_state,command=change_tts)
+
+
+## Tab
+Tab = tk.Menu(Tools,tearoff=False)
+
+Tools.add_separator()
+Tools.add_cascade(label="Tab size",menu=Tab)
+
+Tab.add_radiobutton(label='2 spaces',variable=tab_size_choice,compound=tk.LEFT,command=change_tab_size)
+Tab.add_radiobutton(label='4 spaces',variable=tab_size_choice,compound=tk.LEFT,command=change_tab_size)
+Tab.add_radiobutton(label='8 spaces',variable=tab_size_choice,compound=tk.LEFT,command=change_tab_size)
+
 
 
 ## Binding shortcuts
