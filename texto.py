@@ -740,17 +740,18 @@ def on_closing():
         else:
             main_application.quit()
 main_application.protocol('WM_DELETE_WINDOW',on_closing)
-File.add_command(label = 'Exit',compound=tk.LEFT,accelerator='CTRL+E',command=on_closing)
+File.add_separator()
+File.add_command(label = 'Exit',compound=tk.LEFT,accelerator='Alt+F4',command=on_closing)
 
 
 #adding images to EDIT menu
-Edit.add_command(label='Copy',image=copy_icon,compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-c>'))
+Edit.add_command(label='Copy',compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-c>'))
 
-Edit.add_command(label='Cut',image=cut_icon,compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-x>'))
+Edit.add_command(label='Cut',compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-x>'))
 
-Edit.add_command(label='Paste',image=paste_icon,compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-v>'))
+Edit.add_command(label='Paste',compound=tk.LEFT,command=lambda:text_area.event_generate('<Control-v>'))
 
-Edit.add_command(label='Clear All',image=clear_all_icon,compound=tk.LEFT,command=lambda:text_area.delete(1.0, tk.END))
+Edit.add_command(label='Clear All',compound=tk.LEFT,command=lambda:text_area.delete(1.0, tk.END))
 
 
 # VIEW MENU FUNCTIONALITY
