@@ -14,7 +14,7 @@ Additional features include:
 &ensp;
 
 # Downloading
-Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/Texto/raw/master/Texto-1.1-amd64.msi) and run *texto.exe*
+Download and install [Texto-1.12-amd64.msi](https://github.com/RashimNarayanTiku/Texto/raw/master/Texto-1.12-amd64.msi) and run *texto.exe*
 
 &ensp;
 
