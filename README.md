@@ -24,7 +24,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
    * *Improved spelling checker with word correction option*
    * *Line Number SideBar (With dynamic size adjuster)*
    * *ToolTips (i.e. Button Labels)*
-   * * Tab-size change option*
+   * *Tab-size change option*
    * *Contextual Menu (i.e. Right Click Menu)*
    * *FullScreen Mode(F11 and Esc)* 
    * *UI changes*
@@ -35,7 +35,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     * Save, Save As
     * Open, Close
     * Cut, Copy, Paste
-    * Select All
+    * clear All
 1. **Font change options**
     * Bold, Italics, Underline
     * Font Size, Family, Color
@@ -73,7 +73,7 @@ Download and install [Texto-1.1-amd64.msi](https://github.com/RashimNarayanTiku/
     
 &ensp;
 # Images
-![Screen](white.png)
+![Screen](white2.png)
 
 &ensp;
 
