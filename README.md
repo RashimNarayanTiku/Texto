@@ -13,10 +13,19 @@ Additional features include:
 
 &ensp;
 
+&ensp;
+# Images
+![Screen](white2.png)
+
+&ensp;
+
+### #Red Theme
+![Red Screen](red.png)
+
+&ensp;
 # Downloading
 Download and install [Texto-1.12-amd64.msi](https://github.com/RashimNarayanTiku/Texto/raw/master/Texto-1.12-amd64.msi) and run *texto.exe*
 
-&ensp;
 
 ## Features:
 
@@ -71,16 +80,7 @@ Download and install [Texto-1.12-amd64.msi](https://github.com/RashimNarayanTiku
 1. **Line and Column Number**
     * Follows the mouse pointer and keeps the track of line and column number in the editor.
     
-&ensp;
-# Images
-![Screen](white2.png)
 
-&ensp;
-
-### #Red Theme
-![Red Screen](red.png)
-
-&ensp;
 
 # Credits
 Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
