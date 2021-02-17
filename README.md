@@ -11,9 +11,6 @@ Additional features include:
 * Word counter
 * FullScreen Mode
 
-&ensp;
-
-&ensp;
 # Images
 ![Screen](white2.png)
 
