@@ -24,7 +24,7 @@ Additional features include:
 Download and install [Texto-1.12-amd64.msi](https://github.com/RashimNarayanTiku/Texto/raw/master/Texto-1.12-amd64.msi) and run *texto.exe*
 
 
-## Features:
+# Features:
 
 0. **Recently added Features**
    * *Improved spelling checker with word correction option*
